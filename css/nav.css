@@ -1,0 +1,67 @@
+nav {
+    background-color: var(--c-15);
+    width: 100%;
+    height: var(--h-40);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.titlebar-logo {
+    pointer-events: none;
+    /* background-color: red; */
+    width: var(--h-40);
+    height: var(--h-40);
+    display: grid;
+    place-items: center;
+}
+
+.titlebar-logo > svg {
+    pointer-events: none;
+    width: 20px;
+    height: 20px;
+}
+
+.titlebar-menu {
+    /* background-color: green; */
+    width: fit-content;
+    height: var(--h-mid);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 2px; */
+    margin-right: auto;
+}
+
+.titlebar-menu > span {
+    cursor: pointer;
+    /* background-color: rebeccapurple; */
+    border-radius: var(--round);
+    padding: 4px 10px;
+}
+
+.titlebar-menu > span:hover {
+    background-color: var(--c-20);
+}
+
+.titlebar-controls {
+    height: var(--h-40);
+    display: flex;
+}
+
+.titlebar-controls > span {
+    cursor: pointer;
+    width: var(--h-40);
+    height: var(--h-40);
+    display: grid;
+    place-items: center;
+}
+
+.titlebar-controls svg {
+    width: 8px;
+    height: 8px;
+}
+
+.titlebar-controls > span:hover {
+    background-color: var(--c-20);
+}

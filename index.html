@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" type="module" defer></script>
+    <title>Swan Design</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="titlebar-logo">
+                <svg width="100%" height="100%" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M 5.891 13.299 C 5.913 11.888 10.135 11.888 10.124 13.299 C 10.118 14.049 5.879 14.035 5.891 13.299 Z" style="fill:#f90;"/>
+                    <path d="M 7.915 0.002 L 8.085 0.002 C 11.335 0.123 11.541 0.696 12.13 0.905 C 13.043 1.23 13.849 0.431 14.321 0.632 C 15.303 1.052 14.99 1.885 14.77 2.233 C 14.277 3.013 13.575 3.268 13.095 3.313 C 12.471 3.372 12.198 4.509 12.967 4.683 C 16.149 5.403 17.584 11.302 13.46 12.569 C 13.232 12.639 13.301 13.307 13.164 13.456 C 12.799 13.85 12.109 13.882 11.623 13.63 C 11.024 13.319 11.285 12.588 11.058 12.34 C 10.456 11.681 9.199 11.28 8.008 11.28 L 7.992 11.28 C 6.801 11.28 5.544 11.681 4.942 12.34 C 4.715 12.588 4.976 13.319 4.377 13.63 C 3.891 13.882 3.201 13.85 2.836 13.456 C 2.699 13.307 2.768 12.639 2.54 12.569 C -1.584 11.302 -0.149 5.403 3.033 4.683 C 3.802 4.509 3.529 3.372 2.905 3.313 C 2.425 3.268 1.723 3.013 1.23 2.233 C 1.01 1.885 0.697 1.052 1.679 0.632 C 2.151 0.431 2.957 1.23 3.87 0.905 C 4.459 0.696 4.665 0.123 7.915 0.002 Z M 1.191 8.434 C 1.864 6.553 6.552 8.335 5.58 10.034 C 5.244 10.622 2.594 10.391 2.245 10.256 C 1.403 9.933 0.909 9.224 1.191 8.434 Z M 14.809 8.434 C 14.136 6.553 9.448 8.335 10.42 10.034 C 10.756 10.622 13.406 10.391 13.755 10.256 C 14.597 9.933 15.091 9.224 14.809 8.434 Z" style="fill: rgb(228, 230, 231); fill-rule: evenodd;"/>
+                </svg>
+            </span>
+            <div class="titlebar-menu">
+                <span>File</span>
+                <span>Edit</span>
+                <span>Text</span>
+                <span>Layer</span>
+                <span>Select</span>
+                <span>View</span>
+                <span>Help</span>
+            </div>
+            <div class="titlebar-controls">
+                <span> <!-- MINIMIZE -->
+                    <svg width="100%" height="100%" viewBox="0 0 8 8" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0" y="6" width="8" height="2" style="fill:#FFFFFF;"/>
+                    </svg>
+                </span>
+                <span> <!-- MAXIMIZE -->
+                    <svg width="100%" height="100%" viewBox="0 0 8 8" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8,0l-8,0l0,8l8,0l0,-8Zm-2,3l0,3c0,0 -4,0 -4,0l-0,-3l4,0Z" style="fill:#FFFFFF;"/>
+                    </svg>
+                </span>
+                <span> <!-- CLOSE -->
+                    <svg width="100%" height="100%" viewBox="0 0 8 8" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4,2.4l-2.4,-2.4l-1.6,1.6l2.4,2.4l-2.4,2.4l1.6,1.6l2.4,-2.4l2.4,2.4l1.6,-1.6l-2.4,-2.4l2.4,-2.4l-1.6,-1.6l-2.4,2.4Z" style="fill:#FFFFFF;"/>
+                    </svg>
+                </span>
+            </div>
+        </nav>
+        <section class="tool-options">
+            <span>s</span>
+        </section>
+    </header>
+    <main>
+        <section class="toolbar">
+            <span data-toolName="move" data-toolState="active">.</span>
+            <span data-toolName="select" data-toolState="inactive">.</span>
+            <span data-toolName="pen" data-toolState="inactive">.</span>
+            <span data-toolName="rectangle" data-toolState="inactive">
+                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <linearGradient gradientUnits="userSpaceOnUse" x1="8" y1="0" x2="8" y2="16" id="gradient-0">
+                        <stop offset="0" style="stop-color: #FF9900"/>
+                        <stop offset="1" style="stop-color: #EC7813;"/>
+                    </linearGradient>
+                    <rect width="16" height="16" fill="url(#gradient-0)"/>
+                </svg>
+            </span>
+            <span data-toolName="circle" data-toolState="inactive">
+                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <linearGradient gradientUnits="userSpaceOnUse" x1="8" y1="0" x2="8" y2="16" id="gradient-0">
+                        <stop offset="0" style="stop-color: #FF9900"/>
+                        <stop offset="1" style="stop-color: #EC7813;"/>
+                    </linearGradient>
+                    <circle cx="8" cy="8" r="8" fill="url(#gradient-0)"/>
+                </svg>
+            </span>
+            <span data-toolName="text" data-toolState="inactive">.</span>
+            <span data-toolName="textbox" data-toolState="inactive">.</span>
+            <span data-toolName="image" data-toolState="inactive">.</span>
+            <span data-toolName="gradient" data-toolState="inactive">.</span>
+            <span data-toolName="view" data-toolState="inactive">.</span>
+            <span data-toolName="hand" data-toolState="inactive">.</span>
+            <span data-toolName="zoom" data-toolState="inactive">.</span>
+        </section>
+        <section id="workspace">
+            <span id="guide"></span>
+            <span id="active_view" class="view">
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg width="100%" height="100%" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                </svg>
+            </span>
+        </section>
+        <section class="inspector">
+            
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

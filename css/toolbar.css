@@ -1,0 +1,31 @@
+.toolbar {
+    background-color: var(--c-20);
+    width: var(--h-40);
+    height: 100%;
+    border-radius: 0 var(--round) var(--round) 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: var(--s-16) 0;
+    gap: var(--s-8);
+}
+
+[data-toolName] {
+    cursor: pointer;
+    width: var(--h-30);
+    height: var(--h-30);
+    border-radius: 4px;
+    display: grid;
+    place-items: center;
+}
+
+[data-toolName] > svg {
+    pointer-events: none;
+    width: 16px;
+    height: 16px;
+}
+
+[data-toolState="active"], .toolbar > span:hover {
+    background-color: var(--c-15);
+}

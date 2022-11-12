@@ -1,0 +1,5 @@
+old/
+misc/
+icons/
+*.ts
+tsconfig.json
